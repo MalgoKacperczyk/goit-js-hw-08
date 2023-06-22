@@ -28,7 +28,7 @@ function fillForm() {
   }
 }
 
-const throttleInput = _.throttle(handleInput, 500);
+const throttleInput = throttle(handleInput, 500);
 
 emailInput.addEventListener('input', throttleInput);
 messageInput.addEventListener('input', throttleInput);
